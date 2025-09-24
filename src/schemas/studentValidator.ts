@@ -2,6 +2,7 @@ import { z } from "zod";
 
 const zStudentId = z
   .string()
+  .trim()
   .length(9, { message: "Student Id must contain 9 characters" });
 const zFirstName = z
   .string()
